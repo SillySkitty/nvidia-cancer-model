@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ImageNet Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ImageNet Classifier</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="imageUpload" class="custom-file-upload">
+                <input id="imageUpload" type="file" name="image" accept="image/*" required>
+                Choose Image
+            </label>
+            <button type="submit">Classify</button>
+        </form>
+        <div id="resultBox" style="display:none;">
+            <h3>Result:</h3>
+            <div id="result"></div>
+        </div>
+        <div id="error" class="error"></div>
+    </div>
+    <div>
+        <img id="preview" style="display:none; margin: 1em auto; max-width: 80%; max-height: 200px; border-radius:10px; box-shadow:0 2px 14px rgba(0,0,0,0.07);" />
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

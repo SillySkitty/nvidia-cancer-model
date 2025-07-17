@@ -1,0 +1,80 @@
+body {
+    background: #f2f6fc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 430px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 2.5em;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(40,60,120,0.11);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: .01em;
+    margin-bottom: 1.3em;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0.5em 1.4em;
+    cursor: pointer;
+    background: #2b8aed;
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    transition: background .15s;
+}
+
+.custom-file-upload:hover {
+    background: #1867be;
+}
+.custom-file-upload.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+button[type="submit"], #exportBtn {
+    padding: 0.5em 1.4em;
+    background: #23c386;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1.2em;
+    transition: background .15s;
+}
+
+button[type="submit"]:hover, #exportBtn:hover {
+    background: #16a96a;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top:1em;
+    font-size:1.1em;
+}
+#resultBox {
+    margin-top: 2.5em;
+    background: #f6fcfa;
+    border-radius: 7px;
+    padding: 1.3em;
+    box-shadow: 0 2px 7px rgba(44,120,80,0.09);
+}
